@@ -21,11 +21,12 @@ SITEFILE=50magit-gentoo.el
 src_unpack() {
 	git_src_unpack
 	cd ${S}
+	epatch ${FILESDIR}/lispdir.patch
 	eautoreconf
 }
 
 src_compile() {
-	econf --with-lispdir=${D}/${SITELISP}/${PN} || die
+	econf || die
 	emake || die
 }
 

@@ -1,0 +1,10 @@
+diff Makefile.am Makefile.am
+index 8ae4192..67beae9 100644
+--- Makefile.am
++++ Makefile.am
+@@ -1,4 +1,4 @@
+-lispdir = $(datadir)/emacs/site-lisp
++lispdir = $(datadir)/emacs/site-lisp/magit
+ sitestartdir = $(sysconfdir)/emacs/site-start.d
+ 
+ lisp_DATA = magit.el magit.elc
